@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="curdstyle.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student Id</label>
+                        <input type="text" id="Id">
+                    </div>
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="NameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="Name">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="Email">
+                    </div>
+                    <div>
+                        <label>Qualification</label>
+                        <input type="text" name="Qualification" id="Qualification">
+                    </div>
+                    <div>
+                        <label>Passing Year</label>
+                        <input type="text" name="Year" id="Year">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="City" id="City">
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="Country" id="Country">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Qualification</th>
+                            <th>Year</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="curdscript.js"></script>
+    <a href="form.html" id="a1">Back</a>
+</body>
+
+</html>
